@@ -3,147 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Afsana Mimi – Portfolio</title>
+  <title>Afsana Mimi | Portfolio</title>
+
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background: #fdfdfd;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
       color: #333;
     }
+
     header {
-      background: #7A3FF2;
-      color: white;
+      background: #000;
+      color: #fff;
       padding: 20px;
       text-align: center;
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
+
+    header h1 {
+      font-size: 28px;
+      letter-spacing: 1px;
     }
-    section {
-      padding: 40px;
-      max-width: 1200px;
+
+    header p {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .portfolio-section {
+      padding: 40px 20px;
+      max-width: 900px;
       margin: auto;
     }
-    h2 {
-      color: #7A3FF2;
-      border-bottom: 2px solid #D4AF37;
-      padding-bottom: 5px;
-    }
-    /* Portfolio Grid */
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .portfolio-item {
-      background: #fff;
-      border: 1px solid #ddd;
-      padding: 15px;
+
+    .portfolio-section h3 {
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
+      margin-bottom: 20px;
+      font-size: 22px;
     }
-    .portfolio-item:hover {
-      transform: scale(1.03);
+
+    .iframe-container {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
-    .portfolio-item img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
     }
-    footer {
+
+    .cta {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #000;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
       background: #333;
-      color: white;
+    }
+
+    footer {
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
-    }
-    .contact-info a {
-      color: #D4AF37;
-      text-decoration: none;
-      font-weight: bold;
+      font-size: 12px;
+      color: #777;
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Afsana Mimi</h1>
-  <p>Marketing Executive & Graphic Designer</p>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#resume">Resume</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- Header -->
+  <header>
+    <h1>Afsana Mimi</h1>
+    <p>Marketing Executive & Graphic Designer</p>
+  </header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>Results-driven Marketing Executive & Graphic Designer with 7+ years of experience in enhancing brand visibility and driving revenue growth. Skilled in combining creative design with data-driven marketing strategies to achieve business objectives.</p>
-</section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Creative Portfolio</h2>
+    <p>Branding • Fashion Design • Marketing Visuals</p>
+  </section>
 
-<section id="portfolio">
-  <h2>Portfolio Showcase</h2>
-  <div class="portfolio-grid">
-    <!-- Add all your uploaded images here -->
-    <div class="portfolio-item">
-      <img src="meherima-invitation.jpg" alt="Meherima Fashion Invitation">
-      <p>Meherima Fashion Ltd – Grand Opening Invitation    <div class="portfolio-item">
-      <img src="meherima-catalog.jpg" alt="Fashion Catalog">
-      <p>2021 Collection Catalog & Canva Designs</p>
-    </div>
-    <div class="portfolio-item">
-      <img src="construction-branding.jpg" alt="Construction Branding">
-      <p>M/S & MTT Construction – Branding & Campaigns</p>
-    </div>
-    <div class="portfolio-item">
-      <img src="haldi-invitation.jpg" alt="Haldi Ceremony Invitation">
-      <p>Haldi Ceremony Invitation</p>
-    </div>
-    <div class="portfolio-item">
-      <img src="business-card.jpg" alt="Business Card">
-      <p>MS Showrav Enterprise – Business Card Design</p>
-    </div>
-    <div class="portfolio-item">
-      <img src="logo-design.jpg" alt="Logo Design">
-      <p>Construction Logo Design</p>
-    </div>
-    <div class="portfolio-item">
-      <img src="invoice.jpg" alt="Invoice Design">
-      <p>Professional Invoice Layout</p>
-    </div>
-    <!-- Add more items as needed -->
-  </div>
-</section>
+  <!-- Portfolio Section -->
+  <section class="portfolio-section">
+    <h3>My Work</h3>
 
-<section id="resume">
-  <h2>Resume</h2>
-  <p><strong>Marketing Executive</strong> – M/S Showrav Enterprise Company Ltd (2022–Present)</p>
-  <p><strong>Graphic Designer</strong> – Meherima Fashion Ltd (2018–2021)</p>
-  <p><strong>Education:</strong> Diploma in Business Management (CGPA 3.90), MA in Language & Culture, BA in Language & Culture</p>
-  <p><strong>Skills:</strong> Adobe Photoshop, Illustrator, Microsoft Office, Time Management, Critical Thinking</p>
-</section>
+    <div class="iframe-container">
+      <iframe 
+        src="https://www.jotform.com/app/260970338955468?appEmbedded=1">
+      </iframe>
+    </div>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="contact-info">
-    <p>📍 Gazipur 1703, Dhaka, Bangladesh</p>
-    <p>📞 +8801321695098</p>
-    <p>✉️ <a href="mailto:afsanamimi1996@hotmail.com">afsanamimi1996@hotmail.com</a></p>
-    <p>🔗 <a href="https://www.linkedin.com/in/afsana-mimi-75332b3b5">LinkedIn Profile</a></p>
-    <p>🔗 <a href="https://afsanamimishowmi744-ui.github.io/">Portfolio Website</a></p>
-  </div>
-</section>
+    <div class="cta">
+      <a href="https://www.jotform.com/app/260970338955468" target="_blank">
+        Open Full Portfolio
+      </a>
+    </div>
 
-<footer>
-  <p>© 2026 Afsana Mimi | Designed with Elegance & Confidence</p>
-</footer>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Afsana Mimi | All Rights Reserved
+  </footer>
 
 </body>
 </html>

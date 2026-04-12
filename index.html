@@ -1,144 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Afsana Mimi | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afsana Mimi | Premium Portfolio</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-    body {
-      background: #f9f9f9;
-      color: #333;
-    }
+body {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  color: #222;
+}
 
-    header {
-      background: #000;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
 
-    header h1 {
-      font-size: 28px;
-      letter-spacing: 1px;
-    }
+nav h1 {
+  font-size: 22px;
+  letter-spacing: 2px;
+}
 
-    header p {
-      font-size: 14px;
-      opacity: 0.8;
-    }
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
+  font-size: 14px;
+}
 
-    .hero {
-      text-align: center;
-      padding: 40px 20px;
-    }
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
 
-    .hero h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
 
-    .hero p {
-      font-size: 16px;
-      color: #666;
-    }
+.hero span {
+  color: #ff3b3b;
+}
 
-    .portfolio-section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+.hero p {
+  color: #666;
+  font-size: 16px;
+}
 
-    .portfolio-section h3 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 22px;
-    }
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #000;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-    .iframe-container {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
+.btn:hover {
+  background: #ff3b3b;
+}
 
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-    }
+/* SECTION */
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
 
-    .cta {
-      text-align: center;
-      margin-top: 20px;
-    }
+/* PORTFOLIO CARD */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
 
-    .cta a {
-      display: inline-block;
-      background: #000;
-      color: #fff;
-      padding: 12px 25px;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
+iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 12px;
+}
 
-    .cta a:hover {
-      background: #333;
-    }
+/* ABOUT */
+.about {
+  text-align: center;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 12px;
-      color: #777;
-    }
-  </style>
+.about h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.about p {
+  color: #666;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+  font-size: 13px;
+}
+
+</style>
 </head>
 
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Afsana Mimi</h1>
-    <p>Marketing Executive & Graphic Designer</p>
-  </header>
+<!-- NAVBAR -->
+<nav>
+  <h1>AFSANA MIMI</h1>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Creative Portfolio</h2>
-    <p>Branding • Fashion Design • Marketing Visuals</p>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <h2>Creative <span>Fashion Designer</span></h2>
+  <p>Branding • Marketing • Fashion Visual Design</p>
+  <a href="#portfolio" class="btn">View Portfolio</a>
+</section>
 
-  <!-- Portfolio Section -->
-  <section class="portfolio-section">
-    <h3>My Work</h3>
+<!-- ABOUT -->
+<section class="section about">
+  <h3>About Me</h3>
+  <p>
+    I am Afsana Mimi, a Marketing Executive & Graphic Designer specializing in 
+    fashion branding, creative campaigns, and modern visual storytelling.
+  </p>
+</section>
 
-    <div class="iframe-container">
-      <iframe 
-        src="https://www.jotform.com/app/260970338955468?appEmbedded=1">
-      </iframe>
-    </div>
+<!-- PORTFOLIO -->
+<section class="section" id="portfolio">
+  <div class="card">
+    <iframe src="https://www.jotform.com/app/260970338955468?appEmbedded=1"></iframe>
+  </div>
 
-    <div class="cta">
-      <a href="https://www.jotform.com/app/260970338955468" target="_blank">
-        Open Full Portfolio
-      </a>
-    </div>
+  <div style="text-align:center;">
+    <a href="https://www.jotform.com/app/260970338955468" target="_blank" class="btn">
+      Open Full Portfolio
+    </a>
+  </div>
+</section>
 
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    © 2026 Afsana Mimi | All Rights Reserved
-  </footer>
+<!-- FOOTER -->
+<footer>
+  © 2026 Afsana Mimi | Premium Portfolio Design
+</footer>
 
 </body>
 </html>
